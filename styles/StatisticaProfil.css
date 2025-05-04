@@ -1,0 +1,254 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ button {
+  border: none;
+  outline: none;
+ }
+
+.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comfortaa-uniquifier {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container1 {
+  max-width: 351px;
+  margin: 0 auto;
+}
+.profilmain{
+  margin-top: 60px;
+  
+}
+
+.nav1 {
+  position: fixed;
+  top: 0; /* Üstə yapışdırmaq üçün */
+  left: 0; /* Sol kənara yapışdırmaq üçün */
+  width: 100%; /* Tam eni kaplaması üçün */
+  height: 56px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Elementləri şaquli mərkəzləşdirmək üçün */
+  padding: 0 20px; /* İç boşluq əlavə etdim */
+  background: white; /* Arxa fon rəngi */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Kölgə effekti */
+  z-index: 1000; /* Digər elementlərin üstündə olması üçün */
+}
+
+.profilDiv1 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.profilDiv2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; 
+}
+
+.pp-radius {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover; 
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: -30px; 
+    background-color: rgba(0, 0, 0,1 );
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transform: translateY(-50%); 
+    z-index: 1; 
+  }
+.content1{
+  margin: 30px;
+  align-items: center;
+  flex-direction: column;
+ }
+
+.button1 {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.custom-button {
+  width: 169.2px;
+  height: 32px;
+  border-radius: 12px;
+  border: 1px solid var(--Background-100, #F2F4F7);
+}
+
+.custom-button-active {
+  width: 169.2px;
+  height: 32px;
+  border-radius: 12px;
+  border: 1px solid var(--Background-100, #F2F4F7);
+  background: #344054;
+  color: white;
+}
+.bg-1A4D2E {
+  background-color: #1A4D2E;
+  color: white;
+}
+.slide1 {
+  position: sticky;
+  top: 50px; 
+  z-index: 999;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: #F2F4F7;
+  border-radius: 24px;
+  margin: 20px 12px;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+
+}
+.section2{
+  display: flex;
+  background-color: #F2F4F7;
+  border-radius: 24px;
+  width: 169px;
+  height: 76px;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sectiontext {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-bg-color {
+  background-color: white;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.sectionbar {
+  background-color: #F2F4F7;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;  
+  flex-direction: column;
+  gap: 12px;
+  padding: 15px 20px;
+  margin: 20px 0px;
+  margin-bottom: 63px;
+}
+
+.sectionbarbar {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.progress-bar {
+  height: 20px;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  transition: width 0.5s ease-in-out;
+  min-width: 70%;
+}
+.progress-bar.percent-90 {
+  width: 90%;
+  background: linear-gradient(to right, #4CAF50 90%, #eee 90%);
+}
+
+.conten2 {
+ 
+  grid-template-columns: repeat(3, 1fr);
+  gap:1px;
+  margin-top: 10px;
+}
+
+.conten2box{
+  position: relative;
+  display: inline-block; 
+  border: 1px;
+}
+
+.conten2box p {
+  position: absolute; 
+  left: 2px;
+  bottom: 0; 
+  color: white; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.conten2box p img {
+  width: 20px; 
+  margin-right: 5px;
+}
+.menuButtonchart {
+  background-color: #1A4D2E;
+  border-radius: 10px;
+}
+.containerMenu {
+  position: fixed;
+  bottom: 0; /* Üstə yapışdırmaq üçün */
+  left: 0; /* Sol kənara yapışdırmaq üçün */
+  width: 100%; /* Tam eni kaplaması üçün */
+  height: 56px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Elementləri şaquli mərkəzləşdirmək üçün */
+  padding: 0 20px; /* İç boşluq əlavə etdim */
+  background: white; /* Arxa fon rəngi */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Kölgə effekti */
+  z-index: 1000; /* Digər elementlərin üstündə olması üçün */
+}
+
+
+@media (max-width: 768px) {
+  .nav1 {
+    position: fixed;
+    top: 0; /* Üstə yapışdırmaq üçün */
+    left: 0; /* Sol kənara yapışdırmaq üçün */
+    width: 100%; /* Tam eni kaplaması üçün */
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Elementləri şaquli mərkəzləşdirmək üçün */
+    padding: 0 20px; /* İç boşluq əlavə etdim */
+    background: white; /* Arxa fon rəngi */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Kölgə effekti */
+    z-index: 1000; /* Digər elementlərin üstündə olması üçün */
+  }
+  
+}
+
