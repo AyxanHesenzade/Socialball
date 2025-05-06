@@ -8,7 +8,18 @@ button {
     outline: none;
     border: none;
   }
-
+.special-gothic-expanded-one-regular {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.comfortaa-uniquifier {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 .containerMain{
     max-width: 375px;
     margin: 0 auto;
