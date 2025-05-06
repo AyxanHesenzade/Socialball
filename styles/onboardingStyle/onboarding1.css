@@ -1,0 +1,331 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+    outline: none;
+    border: none;
+  }
+
+.containerMain{
+    max-width: 375px;
+    margin: 0 auto;
+    
+}
+.Banner{ 
+    background-color: white;
+    
+}
+
+.content1{
+    max-width: 351px;
+    padding: 10px;
+}
+
+.content1 p{
+    margin-top: 20px;
+    gap: 10px;
+}
+.content2 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.Banner2 img {
+    width: 375px;
+    height: 380px;
+    object-fit: cover;
+}
+.Banner3{
+    width: 375px;
+  height: 380px;
+  overflow: hidden;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+  
+.divslide{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 375px;  /* istəyə görə ölçü verə bilərsən */
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* və ya contain */
+    display: block;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    margin-top: 100px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: white; 
+    text-align: center;
+    padding: 1rem;
+    object-fit: cover;
+  }
+  
+
+.Page4text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 351px;
+    margin: 0 auto;
+}
+
+.buttonarea{
+    display: flex;
+    margin-top: 40px;
+    gap: 16px;
+}
+
+
+.btnCSP{
+    height: 54px;
+    width: 106px;
+    border-radius: 24px;
+    background-color: #1A4D2E;
+    color: white;
+}
+
+.btnlogin{
+    max-width: 351px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+}
+.btnSignUp{
+    height: 54px;
+    width: 351px;
+    border-radius: 24px;
+    background-color: #1A4D2E;
+    color: white;
+}
+
+.btnSignIn{
+    height: 54px;
+  width: 351px;
+  border-radius: 24px;
+  background-color: transparent; /* Arxa fon şəffaf */
+  color: white;                   /* Yazı rəngi ağ */
+  border: 1px solid white;
+}
+
+.signWith{
+    margin-top: 20px;
+}
+.signwithheader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+  
+.line {
+    flex: 1;
+    height: 3px;
+    width: 140px;
+    background-color: #fffcfc; /* istədiyin xətt rəngi */
+}
+  
+.signwithheader h5 {
+    margin: 0;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 14px;
+    color: white; /* və ya istədiyin rəng */
+}
+.signwithheader h6{
+    margin: 0;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(7, 7, 7); /* və ya istədiyin rəng */
+}
+
+.AreaSignwith{
+    gap: 16px;
+    margin-top: 30px;
+}
+.btnSignWith{
+    width: 169px;
+    height: 44px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-radius: 24px;
+    border-color: #040404;
+}
+
+.btnSignWith img{
+    margin: 0 auto;
+    height: 24px;
+    width: 24px;
+}
+  
+  
+  
+
+.SkipNext {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 351px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.btn{
+    width: 68px;
+    height: 51px;
+    border-radius: 24px;
+    
+}
+
+.bgs{
+    border: 2px solid; 
+    border-color: #A3B8AB;
+    color: #A3B8AB;
+    background-color: white;
+}
+.bgn{
+    border: 2px solid;
+    background-color: #1A4D2E;
+
+}
+
+/* Onboarding səhifələr üçün */
+.onboarding-page {
+    display: none; /* Bütün səhifələri gizlət */
+}
+  
+.onboarding-page.active {
+    display: block; /* Yalnız active class-ı olan səhifəni göstər */
+}
+
+#registerDiv {
+    display: none;
+   
+      
+}
+
+#registerDiv {
+    position: absolute;
+    margin-top: 290px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    border: 1px solid;
+    border-color: black;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: white;
+    color: rgb(9, 9, 9);
+    text-align: center;
+    padding: 1rem;
+    object-fit: cover;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.registerContain{
+    position: relative;
+    top: -100px;
+}
+
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 30px;
+}
+
+.rinput1{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    width: 351px;
+    height: 52px;
+    background-color: #F2F4F7;
+    padding: 20px;
+    border: none;
+    
+}
+
+.pinput1{
+    width: 351px;
+    height: 52px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    background-color: #F2F4F7;
+    padding: 20px;
+    border: none;
+}
+
+.divpswrd{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+
+.line1{
+    flex: 1;
+    height: 3px;
+    width: 140px;
+    background-color: #040404; /* istədiyin xətt rəngi */
+}
+
+  
+
+
+
+
+
+
+
+

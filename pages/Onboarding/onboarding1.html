@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/onboardingStyle/onboarding1.css">
+  <title>SocialBall</title>
+</head>
+<body>
+
+  <div class="containerMain">
+    
+    <!-- ✅ Page 1 -->
+    <div class="onboarding-page active" id="page1">
+        <div class="Banner">
+            <img src="/assets/onboardin/Banner.svg" alt="Banner">
+        </div>
+        <div class="content1">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, eligendi 
+            <span style="color: green;"><b>SocialBall</b></span></p> 
+        </div> 
+    </div>
+
+    <!-- ✅ Page 2 -->
+    <div class="onboarding-page" id="page2">
+      <div class="Banner2">
+         <img src="/assets/onboardin/area.svg" alt="">
+      </div>
+      <div class="divslide"><img src="/assets/onboardin/slide.svg" alt=""></div>
+      <div class="content2"> 
+        <h1>Achieving Together.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, eligendi 
+            <span style="color: green;"><b>SocialBall</b></span></p> 
+      </div>
+    </div>
+
+    <!-- ✅ Page 3 -->
+    <div class="onboarding-page" id="page3">
+      <div class="Banner3">
+        <img src="/assets/onboardin/page3.svg" alt="">
+      </div>
+      <div class="divslide"><img src="/assets/onboardin/slide3.svg" alt=""></div>
+      <div class="content2"> 
+        <h1>Join Us</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, eligendi 
+          <span style="color: green;"><b>SocialBall</b></span></p> 
+      </div>
+    </div>
+
+    <!-- ✅ Page 4 -->
+    <div class="onboarding-page" id="page4">
+      <div class="image-container">
+        <button id="backButton" class="close-btn" style="display: none;">
+          <span>back</span>
+        </button> <!--bu buton olsun amma o biri div acildiqda gorunsun-->
+        <img src="/assets/onboardin/login.svg" alt="">
+        <div class="overlay-content">  <!--birinci div bashlangici-->
+          <div class="Page4text">
+            <h1>Welcome Back</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, corporis.</p>
+          </div>
+
+          <div class="buttonarea">
+            <button  class="btnCSP">Coach</button>
+            <button  class="btnCSP">Scout</button>
+            <button  class="btnCSP">Parent</button>
+          </div>
+          <div class="btnlogin" >
+            <button class="btnSignUp">
+              Sign Up (Player)
+            </button>
+            <button class="btnSignIn">
+              Sign In
+            </button>
+
+          </div>
+
+          <div class="signWith">
+            <div class="signwithheader">
+              <div class="line"></div>
+              <h5>Sign in with</h5>
+              <div class="line"></div>
+            </div>
+
+            <div class="AreaSignwith">
+              <button class="btnSignWith">
+                <img src="/assets/onboardin/google.svg" alt="">
+
+              </button>
+              <button class="btnSignWith">
+                <img src="/assets/onboardin/Social icon.svg" alt="">
+              </button>
+            </div>
+          </div>
+        
+        </div>  <!--birinci divin sonu-->
+
+
+        <!--registerDiv -->
+        <div id="registerDiv" style="display: none;">
+            <!--bu close butonu evezine sadece bu div acilanda yuxarida olan div-->
+        <div class="registerContain">
+          <div><h1>Welcome Back !</h1></div>
+          <div class="inputDiv">
+            <input class="rinput1" type="text" placeholder="full name">
+            <input class="pinput1" type="password" placeholder="password">
+          </div>
+
+          <div  class="divpswrd">
+            <div>
+              <input type="checkbox">
+              Remember me
+            </div>
+
+            <div>
+              <a href="#">Forgot Password ?</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="btnlogin">
+              <button class="btnSignUp">
+                Sign Up 
+              </button>
+            </div>
+          </div>
+
+
+          <div class="signwithheader">
+            <div class="line1"></div>
+            <h6>or</h6>
+            <div class="line1"></div>
+          </div>
+
+          <div class="AreaSignwith">
+            <button class="btnSignWith">
+              <img src="/assets/onboardin/google.svg" alt="">
+
+            </button>
+            <button class="btnSignWith">
+              <img src="/assets/onboardin/Social icon.svg" alt="">
+            </button>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    
+
+    <!-- ==== Onboarding səhifələri bitdi ==== -->
+
+    <!-- Skip və Next düymələri -->
+    <div class="SkipNext">
+      <button id="skipBtn" class="btn bgs">Skip</button>
+      <button id="nextBtn" class="btn bgn">
+        <img src="/assets/onboardin/Right 2.svg" alt="">
+      </button>
+    </div>
+
+  </div>
+
+  
+
+
+  <script src="/script/onboarding/onboarding.js"></script>
+
+</body>
+</html>
