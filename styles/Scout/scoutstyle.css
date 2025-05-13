@@ -238,6 +238,9 @@ input {
     margin-left: 10px;
 }
 
+input{
+    font-family: "Comfortaa", sans-serif;
+}
 .arenaPosition {
     display: flex;
     flex-direction: column;
@@ -308,9 +311,6 @@ input {
     margin-left: 5px;
 }
 
-input{
-    font-family: "Comfortaa", sans-serif;
-}
 .inputArea2{
     display: flex;
     flex-direction: column;

@@ -2,15 +2,15 @@
 const numbers = document.querySelectorAll('.number');
 const container = document.querySelector('.scroll-container');
 
-let selectedScoutAge = null;
+let selectedAge = null;
 container.addEventListener('scroll', function () {
   let center = container.scrollTop + container.offsetHeight / 2;
   numbers.forEach(function (number) {
     let numberPosition = number.offsetTop + number.offsetHeight / 2;
     if (Math.abs(center - numberPosition) < number.offsetHeight / 2) {
       number.classList.add('selected');
-      selectedScoutAge = number.innerHTML;
-      console.log("Seçilmiş Scout Yaş :", selectedScoutAge);
+      selectedAge = number.innerHTML;
+      console.log("Seçilmiş Scout  Yaş :", selectedAge);
       
     } else {
       number.classList.remove('selected');
