@@ -52,3 +52,6 @@ backButton.addEventListener('click', () => {
   overlayContent.style.display = 'flex';
   backButton.style.display = 'none'; // back düyməsini gizlət
 });
+
+
+

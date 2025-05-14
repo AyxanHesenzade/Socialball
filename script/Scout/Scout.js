@@ -33,6 +33,8 @@ document.querySelector('.btnContinue').addEventListener('click', () => {
   if (currentStep < steps.length - 1) {
     currentStep++;
     updateSteps();
+  } else{
+    window.location.href = '/pages/Finish/Finish.html';
   }
 });
 

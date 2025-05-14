@@ -14,10 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesToScroll: 1,
     draggable: true,
     dots: false,
-    arrows: {
-      prev: '.glider-prev',
-      next: '.glider-next',
-    },
     rewind: true,
     
   });
