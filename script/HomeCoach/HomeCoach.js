@@ -18,41 +18,37 @@ document.addEventListener('DOMContentLoaded', () => {
 const btnChat = document.querySelector('#btnChat');
 
 btnChat.addEventListener('click', () => {
-    window.location.href = '/pages/Home/Chat.html';
+    window.location.href = '/pages/HomeCoach/Chat.html';
 }
 );
 
 
 const btnNotification = document.querySelector('#btnNotification');
 btnNotification.addEventListener('click', () => {
-    window.location.href = '/pages/Home/Notification.html';
+    window.location.href = '/pages/HomeCoach/Notification.html';
 }
 );
 
 const btnEventsViewAll = document.querySelector('#btnEventsViewAll');
 btnEventsViewAll.addEventListener('click', () => {
-    window.location.href = '/pages/Home/Events.html';
+    window.location.href = '/pages/HomeCoach/Events.html';
 }
 ); 
 
-const btnTrainingViewAll = document.querySelector('#btnTrainingViewAll');
-btnTrainingViewAll.addEventListener('click', ()=>{
-    window.location.href = '/pages/Home/Traning.html'
+const btnCreateEvent = document.querySelector('#btnCreateEvent');
+btnCreateEvent.addEventListener('click', () => {
+    window.location.href = '/pages/HomeCoach/CreateEvent.html';
+}
+);
+
+const btnCreateTraning = document.querySelector('#btnCrateTraning');
+btnCreateTraning.addEventListener('click', ()=>{
+    window.location.href = '/pages/HomeCoach/CreateTraning.html'
 })
 
 
-const btnEventAbout = document.querySelectorAll('.btnEventAbout');
 
-btnEventAbout.forEach(button => {
-  button.addEventListener('click', () => {
-    window.location.href = '/pages/Home/EvenstAbout.html';
-  });
-});
-
-const cardgeaderbutton = document.querySelectorAll('.cardgeaderbutton')
-
-cardgeaderbutton.forEach(button =>{
-    button.addEventListener('click', ()=>{
-        window.location.href = '/pages/Home/TraningAbout.html'
-    })
+const btnTrainingViewAll = document.querySelector('#btnTrainingViewAll');
+btnTrainingViewAll.addEventListener('click', ()=>{
+    window.location.href = '/pages/HomeCoach/Traning.html'
 })

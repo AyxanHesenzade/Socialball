@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: none;
+}
+
+#btnChat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.special-gothic-expanded-one-regular {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.comfortaa-uniquifier {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    max-width: 375px;
+    margin: 0 auto;  
+    font-family: "Comfortaa", sans-serif; 
+}
+
+.headerbutton1{
+    width: 86px;
+    height: 28px;
+    gap: 8px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 17px;
+    margin-left: 12px;
+}
+.inputFilterDiv{
+    margin:20px 12px;
+    width: 351px;
+    height: 44px;
+    display: flex;
+    padding: 12px 16px 12px 12px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 17px;
+    background: var(--Background-100, #F2F4F7);
+}
+
+.inputFilter{
+    font-family: "Comfortaa", sans-serif;
+    width: 200px;
+}
+.chats{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    position: relative;
+    width: 351px;
+    margin: 8px 12px;
+}
+
+.chatName{
+    margin-right: 175px;
+}
+
+.chatDate{
+    position: absolute;
+    top: 10px;
+    left: 320px;
+    width: 50px;
+    font-size: 10px;
+}
+
+.chatStatus{
+    position: absolute;
+    left: 335px;
+    top: 25px;
+}

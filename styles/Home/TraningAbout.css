@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.special-gothic-expanded-one-regular {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comfortaa-uniquifier {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.containerMain {
+  max-width: 375px;
+  margin: 0 auto;
+  font-family: "Comfortaa", sans-serif;
+}
+.headerbutton1 {
+  width: 28px;
+  height: 28px;
+  gap: 8px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 17px;
+  margin-left: 0px;
+}
+
+.AboutDivHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 12px;
+}
+.bodyHeader {
+  width: 351px;
+  height: 72px;
+  color: var(--Secondarybg-Black, #0c1424);
+  /* Head/Bold/3 */
+  font-family: Comfortaa;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 128.571% */
+  letter-spacing: -0.56px;
+  margin: 12px 12px 12px 12px;
+}
+
+.cardContentTag {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 8px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cardContentTag p {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  border-radius: 11px;
+  border: 1px solid var(--Background-200, #e4e7ec);
+}
+.AboutBody {
+  margin: 12px;
+}
+
+.buttonArea button {
+  display: flex;
+  width: 351px;
+  height: 44px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  color: #e4e7ec;
+  margin: 12px auto;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 17px;
+  border: 1px solid var(--Primary-500, #1a4d2e);
+  background: var(--Primary-500, #1a4d2e);
+  font-family: "Comfortaa", sans-serif;
+
+  /* Shadow/200 */
+  box-shadow: 0px 0px 2px 0px rgba(27, 29, 34, 0.05),
+    0px 1px 2px 0px rgba(27, 29, 34, 0.02),
+    0px 2px 4px 0px rgba(27, 29, 34, 0.04),
+    0px 6px 8px 0px rgba(27, 29, 34, 0.02),
+    0px 16px 16px 0px rgba(27, 29, 34, 0.02);
+}

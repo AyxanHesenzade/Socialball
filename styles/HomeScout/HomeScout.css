@@ -71,90 +71,42 @@ button{
     border: 1px solid var(--Background-100, #F2F4F7);
 }
 
-.divlevel{
-    display: flex;
-    height: 64px;
-    width: 351px;
-    padding: 16px;
-    margin: 16px auto;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    flex: 1 0 0;
-    border-radius: 20px;
-    background: var(--Background-900, #101828);
-}
-.textLevel{
-    display: flex;
-    color: white;
-    width: 319px;
-    height: 32px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.levelBar{
-    display: flex;
-    padding: 4px 12px;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    border-radius: 8px;
-    background: var(--Background-25, #FFF);
-    color: #101828;
-    
-}
-
 .divChallenge{
     display: flex;
     width: 351px;
-    height: 108px;
+    height: 80px;
     padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     border-radius: 24px;
-    background: var(--Background-100, #F2F4F7);
     margin: 8px auto;
 }
 
-.divChallengeTitle{
+#btnCreateAnnouncement{
+    width: 295px;
+    height: 48px;
     display: flex;
-    justify-content: space-between;
+    padding: 16px 8px 16px 12px;
+    justify-content: center;
     align-items: center;
-    width: 319px;
-    height: 20px;
+    gap: 4px;
+    border-radius: 16px;
+    background: var(--Primary-500, #1A4D2E);
+    color: white;
 }
-.divChallengeTitle button {
-    font-size: 15px;
+
+
+#btnHistory{
+    width: 47px;
+    height: 44px;
     display: flex;
+    padding: 12px 0px;
+    justify-content: center;
     align-items: center;
+    gap: 4px;
+       border-radius: 16px;
+    background: var(--Background-100, #F2F4F7);
 }
-
-.divChallengeTitle p{
-    font-size: 15px;
-}
-.divChallengeContent{
-    width: 319px;
-}
-
-.progress-bar-container {
-  width: 100%; /* Kapsayıcı div-in tam genişliyi */
-  height: 12px; /* Barın hündürlüyü */
-  background-color: #E4E7EC; /* Arxa fon rəngi */
-  border-radius: 5px; /* Künclərin yumşaldılması */
-  overflow: hidden; /* Sərhədin kənarlarından daşmağı gizlətmək */
-  border-radius: 24px;
-  margin-top: 5px;
-}
-
-.progress-bar {
-  height: 100%; /* Barın hündürlüyü */
-  background-color: #1A4D2E; /* Barın rəngi (yaşıl) */
-  width: 20%; 
-  border-radius: 24px; /* Barın künclərinin yumşaldılması */
-}
-
 .events{
     width: 351px;
     margin: 8px auto;

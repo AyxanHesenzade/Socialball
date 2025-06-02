@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/Home/HomePlayerParent.css">
+    <link rel="stylesheet" href="/styles/HomeScout/HomeScout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet"/>
@@ -39,45 +39,19 @@
 
         </div>
 
-        <div  class="divlevel">
-            <div class="textLevel">
-                <p>50 <span>Level</span></p>
-        
-                <div class="levelBar">
-                    <p >Master Player</p>
-                </div>
-            </div>
-           
-        </div>
+
 
         <div class="divChallenge">
 
-            <div class="divChallengeTitle">
-                <p> Challenge to be done </p>
-                <button> View challenge 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M12 6.66699L8.4714 10.1956C8.21106 10.4559 7.78894 10.4559 7.5286 10.1956L4 6.66699" stroke="#0C1424" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg> 
-                </button>
-            </div>
-
-            <div class="divChallengeContent">
-
-                <div>
-                  <p> <span style="font-size: 20px; color: #0C1424;"> 2/10 </span>   Challenge done</p> 
-                </div>
-
-                <div class="progress-bar-container">
-                      <div class="progress-bar" ></div>
-                </div>  
-                    
-            </div>
-
+            <button  id="btnCreateAnnouncement"> Create  announcement +</button>
             
+            <button  id="btnHistory"> <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                <path d="M10.5 6.66699V10.0003L12.5833 12.0837" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.17012 4.67012L4.63979 4.13979L4.63979 4.13979L5.17012 4.67012ZM4.1148 5.72543L3.36481 5.7292C3.36688 6.14047 3.69976 6.47336 4.11103 6.47542L4.1148 5.72543ZM6.23232 6.48608C6.64653 6.48817 6.984 6.15407 6.98608 5.73986C6.98817 5.32565 6.65407 4.98819 6.23986 4.9861L6.23232 6.48608ZM4.85413 3.60037C4.85205 3.18616 4.51458 2.85207 4.10037 2.85415C3.68616 2.85623 3.35207 3.1937 3.35415 3.60791L4.85413 3.60037ZM3.81268 9.00441C3.86893 8.59403 3.58185 8.21576 3.17148 8.15951C2.7611 8.10326 2.38283 8.39033 2.32658 8.80071L3.81268 9.00441ZM16.3069 4.19309C13.0754 0.961618 7.85187 0.927704 4.63979 4.13979L5.70045 5.20045C8.31672 2.58418 12.5905 2.59799 15.2463 5.25375L16.3069 4.19309ZM4.69309 15.8069C7.92455 19.0384 13.1481 19.0723 16.3602 15.8602L15.2996 14.7996C12.6833 17.4158 8.4095 17.402 5.75375 14.7463L4.69309 15.8069ZM16.3602 15.8602C19.5723 12.6481 19.5384 7.42456 16.3069 4.19309L15.2463 5.25375C17.902 7.9095 17.9158 12.1833 15.2996 14.7996L16.3602 15.8602ZM4.63979 4.13979L3.58447 5.1951L4.64513 6.25576L5.70045 5.20045L4.63979 4.13979ZM4.11103 6.47542L6.23232 6.48608L6.23986 4.9861L4.11857 4.97544L4.11103 6.47542ZM4.86479 5.72166L4.85413 3.60037L3.35415 3.60791L3.36481 5.7292L4.86479 5.72166ZM2.32658 8.80071C1.98693 11.2786 2.77794 13.8918 4.69309 15.8069L5.75375 14.7463C4.18187 13.1744 3.53449 11.034 3.81268 9.00441L2.32658 8.80071Z" fill="#1C274C"/>
+                </svg>
+            </button>
 
-
-            
-
+           
         </div>
 
         <div class="events">
@@ -96,7 +70,7 @@
                     </div>
 
                     <div class="eventCardButton cut-diagonal">
-                        <button class="btnEventAbout">
+                        <button>
                             <img src="/assets/HomePlayerParent/up.svg" alt="">
                         </button>
                     </div>
@@ -112,7 +86,7 @@
                     </div>
 
                     <div class="eventCardButton cut-diagonal">
-                        <button class="btnEventAbout">
+                        <button>
                             <img src="/assets/HomePlayerParent/up.svg" alt="">
                         </button>
                     </div>
@@ -384,6 +358,6 @@
     </div> 
 
 
-    <script src="/script/home/homeparentplayer.js"></script>
+    <script src="/script/HomeScout/HomeScout.js"></script>
 </body>
 </html>

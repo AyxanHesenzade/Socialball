@@ -218,37 +218,54 @@
   background-color: #1A4D2E;
   border-radius: 10px;
 }
-.containerMenu {
-  position: fixed;
-  bottom: 0; /* Üstə yapışdırmaq üçün */
-  left: 0; /* Sol kənara yapışdırmaq üçün */
-  width: 100%; /* Tam eni kaplaması üçün */
-  height: 56px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; /* Elementləri şaquli mərkəzləşdirmək üçün */
-  padding: 0 20px; /* İç boşluq əlavə etdim */
-  background: white; /* Arxa fon rəngi */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Kölgə effekti */
-  z-index: 1000; /* Digər elementlərin üstündə olması üçün */
-}
-
-
-@media (max-width: 768px) {
-  .nav1 {
+.MenuDiv {
+    width: 375px;
+    height: 60px; /* Div-ə hündürlük əlavə edin */
+    margin-left: auto;
+    margin-right: auto;
     position: fixed;
-    top: 0; /* Üstə yapışdırmaq üçün */
-    left: 0; /* Sol kənara yapışdırmaq üçün */
-    width: 100%; /* Tam eni kaplaması üçün */
-    height: 56px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Elementləri şaquli mərkəzləşdirmək üçün */
-    padding: 0 20px; /* İç boşluq əlavə etdim */
-    background: white; /* Arxa fon rəngi */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Kölgə effekti */
-    z-index: 1000; /* Digər elementlərin üstündə olması üçün */
-  }
-  
+    bottom: 0; /* Səhifənin aşağısına sabitləyin */
+    left: 0; /* Sol kənardan başlasın */
+    right: 0; /* Sağ kənara uzansın */
+    background-color: #fff; /* Görünüş üçün arxa fon */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Kölgə effekti */
+    z-index: 1000;
+    display: flex; /* İç elementləri yan-yana düzmək üçün */
+    justify-content: space-around; /* Elementləri bərabər paylayır */
+    align-items: center; /* Şaquli mərkəzləşdirmə */
 }
+a {
+  text-decoration: none; /* altındakı xətti silir */
+  color: inherit; /* yazının rəngini valideyn elementi ilə eyni edir */
+}
+
+
+.MenuHome, 
+.MenuStatistica, 
+.MenuReels, 
+.MenuSearch, 
+.MenuProfile {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 14px;
+    
+    
+}
+
+
+.active {
+    border-radius: 14px;
+    background: var(--Primary-500, #1A4D2E);
+    background: var(--Primary-500, #1A4D2E);
+    color: white;
+}
+
+
+
+
 
