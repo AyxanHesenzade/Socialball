@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    background: none;
+    border: none;
+}
+.containerMain{
+    max-width: 375px;
+    margin: 0 auto;  
+    font-family: "Comfortaa", sans-serif; 
+}
+
+.special-gothic-expanded-one-regular {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.comfortaa-uniquifier {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+}
+.header button {
+    display: flex;
+    align-items: center;
+     font-family: "Comfortaa", sans-serif; 
+}
+.body {
+    background: var(--Background-100, #F2F4F7);
+    height:580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.component{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 12px;
+}
+.componentAbou{
+    display: flex;
+    align-items: center;    
+    gap: 5px;
+}
+.componentIcon{
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Açıq vəziyyət */
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+/* Dairənin sağa keçməsi */
+input:checked + .slider::before {
+  transform: translateX(22px);
+}
+
+.menuButtonchart {
+  background-color: #1A4D2E;
+  border-radius: 10px;
+}
+.MenuDiv {
+    width: 375px;
+    height: 60px; /* Div-ə hündürlük əlavə edin */
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 0; /* Səhifənin aşağısına sabitləyin */
+    left: 0; /* Sol kənardan başlasın */
+    right: 0; /* Sağ kənara uzansın */
+    background-color: #fff; /* Görünüş üçün arxa fon */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Kölgə effekti */
+    z-index: 1000;
+    display: flex; /* İç elementləri yan-yana düzmək üçün */
+    justify-content: space-around; /* Elementləri bərabər paylayır */
+    align-items: center; /* Şaquli mərkəzləşdirmə */
+}
+a {
+  text-decoration: none; /* altındakı xətti silir */
+  color: inherit; /* yazının rəngini valideyn elementi ilə eyni edir */
+}
+
+
+.MenuHome, 
+.MenuStatistica, 
+.MenuReels, 
+.MenuSearch, 
+.MenuProfile {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 14px;
+    
+    
+}
+
+
+.active {
+    border-radius: 14px;
+    background: var(--Primary-500, #1A4D2E);
+    background: var(--Primary-500, #1A4D2E);
+    color: white;
+}

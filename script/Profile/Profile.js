@@ -1,3 +1,22 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const menuItems = document.querySelectorAll('.MenuDiv > div');
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Bütün elementlərdən active sinfini sil
+            menuItems.forEach(menu => menu.classList.remove('active'));
+            // Kliklənən elementə active sinfi əlavə et
+            item.classList.add('active');
+        });
+    });
+
+     
+    document.querySelector('.MenuProfile').classList.add('active');
+});
+
+
+
+
 const aboutBtn = document.getElementById('aboutBtn');
 const activityBtn = document.getElementById('activityBtn');
 
@@ -16,6 +35,7 @@ aboutBtn.addEventListener('click', function () {
 
 
   activityContent.style.display = 'none';
+  aboutContent.style.display = 'block'
 });
 
 activityBtn.addEventListener('click', function () {
@@ -31,8 +51,9 @@ activityBtn.addEventListener('click', function () {
 });
 
 
-const likeBtn = document.querySelector('.likeBtn');
+const btnSettings = document.querySelector('#btnSettings')
 
-likeBtn.addEventListener('click', function() {
-  likeBtn.classList.toggle('active');
-});
+btnSettings.addEventListener('click', ()=>{
+  window.location.href = '/pages/Profile/SettingsProfile.html'
+} )
+

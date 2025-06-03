@@ -48,13 +48,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Continue düyməsi
-  document.querySelector('.btnContinue').addEventListener('click', () => {
-    const targetUrl = roleRoutes[selectedRole];
-    if (targetUrl) {
-      console.log(`Seçilən səhifəyə yönləndirilir: ${targetUrl}`);
-      window.location.href = targetUrl;
-    }
-  });
+ document.querySelector('.btnContinue').addEventListener('click', () => {
+  const targetUrl = roleRoutes[selectedRole];
+  if (targetUrl) {
+    // localStorage-a rolu yaz
+    localStorage.setItem('selectedRole', selectedRole);
+
+    console.log(`Seçilən rol "${selectedRole}" yadda saxlanıldı.`);
+    window.location.href = targetUrl;
+  }
+});
 
   // Başlanğıc rolu aktiv et
   updateActiveRole(selectedRole);
