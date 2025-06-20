@@ -15,5 +15,31 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+const settingsBtnExit = document.getElementById('settingsBtnExit'); 
+
+settingsBtnExit.addEventListener('click', () => {
+    // Parametrlər səhifəsindən çıxmaq üçün yönləndirmə
+    window.location.href = 'Profile.html';
+});
+
+
+const LanguageBtn = document.getElementsByClassName('LanguageBtn');
+
+LanguageBtn[0].addEventListener('click', () => {
+    // Dil seçimi səhifəsinə yönləndirmə
+    window.location.href = 'Language.html';
+});
+
+const ChangePasswordBtn = document.getElementsByClassName('ChangePasswordBtn');
+
+ChangePasswordBtn[0].addEventListener('click', () => {
+    // Şifrə dəyişdirmə səhifəsinə yönləndirmə
+    window.location.href = 'Change-Password.html';
+});
+
+
+
+
+
 
 
