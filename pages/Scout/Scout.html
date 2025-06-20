@@ -41,7 +41,10 @@
             </div>
             <div class="userContainer">
                 <div class="userProfilePhoto">
-                    <img src="/assets/player/camera.png" alt="">
+                  <label for="uploadPhoto">
+                    <img id="profilePreview" src="/assets/player/camera.png" alt="Avatar" />
+                  </label>
+                  <input type="file" id="uploadPhoto" accept="image/*" style="display: none;" />
                 </div>
                 <div>
                     <p>Add Profile pictures</p>
@@ -234,32 +237,19 @@
               <h1>Enter your professional details</h1>
             </div>
       </div>
-      <div  class="inputArea2">
-        <div class="inputAreaDiv">
-          <input type="text" placeholder="Club name">
-          <div class="checkbox1">
-             <input type="checkbox" id="checkbox1">
-             <p>Lorem ipsum dolor sit amet.</p>
+        <div  class="inputArea2">
+          
+          <div class="inputAreaDiv"  id="documentSection">
+           <div class="inputMain">
+          <input type="file" placeholder="Select Document" />
+            </div>
+            <div class="checkbox1">
+              <input type="checkbox" id="checkbox1" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <button class="AddDocument">+ Add More</button>
           </div>
-          <button>+ Add Club</button>
-        </div>
-        <div class="inputAreaDiv">
-          <input type="text" placeholder="Game name">
-          <div class="checkbox1">
-             <input type="checkbox" id="checkbox1">
-             <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <button>+ Add Game</button>
-
-        </div>
-        <div class="inputAreaDiv">
-          <input type="text" placeholder="Traning ">
-          <div  class="checkbox1">
-             <input type="checkbox" id="checkbox1">
-             <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <button>+ Add Traning</button>
-        </div> 
+        
       </div>
     </div>
     </div>

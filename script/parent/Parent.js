@@ -9,8 +9,8 @@ container.addEventListener('scroll', function () {
     let numberPosition = number.offsetTop + number.offsetHeight / 2;
     if (Math.abs(center - numberPosition) < number.offsetHeight / 2) {
       number.classList.add('selected');
-      selectedAge = number.innerHTML;
-      console.log("Seçilmiş Player Yaş :", selectedAge);
+      selectedScoutAge = number.innerHTML;
+      console.log("Seçilmiş Scout Yaş :", selectedScoutAge);
       
     } else {
       number.classList.remove('selected');

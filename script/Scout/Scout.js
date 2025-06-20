@@ -50,3 +50,76 @@ document.querySelectorAll('.button1').forEach(button => {
 
 
 
+const input = document.getElementById("uploadPhoto");
+const preview = document.getElementById("profilePreview");
+
+ // İstifadəçi şəkil seçəndə:
+input.addEventListener("change", function () {
+  const file = this.files[0];
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function () {
+        preview.src = reader.result; // şəkli göstər
+        localStorage.setItem("profilePhoto", reader.result); // yadda saxla
+      };
+
+      reader.readAsDataURL(file); // base64 formatına çevir
+    }
+});
+
+  // Səhifə yüklənəndə daha əvvəlki şəkli yüklə
+  window.addEventListener("DOMContentLoaded", () => {
+    const savedPhoto = localStorage.getItem("profilePhoto");
+    if (savedPhoto) {
+      preview.src = savedPhoto;
+    }
+  });
+
+
+const documentSection = document.getElementById("documentSection");
+const addDocumentBtn = documentSection.querySelector(".AddDocument");
+
+addDocumentBtn.addEventListener("click", () => {
+  const newGroup = document.createElement("div");
+  newGroup.classList.add("club-group");
+
+  const inputMain = document.createElement("div");
+  inputMain.classList.add("inputMain");
+
+  const newInput = document.createElement("input");
+  newInput.type = "file";
+  newInput.placeholder = "Select Document";
+
+  const deleteImg = document.createElement("img");
+  deleteImg.src = "/assets/icon/close-circle.svg";
+  deleteImg.alt = "delete";
+  deleteImg.classList.add("delete-icon");
+
+  deleteImg.addEventListener("click", () => {
+    documentSection.removeChild(newGroup);
+  });
+
+  inputMain.appendChild(newInput);
+  inputMain.appendChild(deleteImg);
+
+  const checkboxDiv = document.createElement("div");
+  checkboxDiv.classList.add("checkbox1");
+
+  const newCheckbox = document.createElement("input");
+  newCheckbox.type = "checkbox";
+
+  const newP = document.createElement("p");
+  newP.textContent = "Lorem ipsum dolor sit amet.";
+
+  checkboxDiv.appendChild(newCheckbox);
+  checkboxDiv.appendChild(newP);
+
+  newGroup.appendChild(inputMain);
+  newGroup.appendChild(checkboxDiv);
+
+  documentSection.insertBefore(newGroup, addDocumentBtn);
+});
+
+

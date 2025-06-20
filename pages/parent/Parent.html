@@ -38,7 +38,10 @@
             </div>
             <div class="userContainer">
                 <div class="userProfilePhoto">
-                    <img src="/assets/player/camera.png" alt="">
+                  <label for="uploadPhoto">
+                    <img id="profilePreview" src="/assets/player/camera.png" alt="Avatar" />
+                  </label>
+                  <input type="file" id="uploadPhoto" accept="image/*" style="display: none;" />
                 </div>
                 <div>
                     <p>Add Profile pictures</p>
@@ -90,7 +93,10 @@
             </div>
             <div class="userContainer">
                 <div class="userProfilePhoto">
-                    <img src="/assets/player/camera.png" alt="">
+                  <label for="uploadPhoto">
+                    <img id="profilePreview" src="/assets/player/camera.png" alt="Avatar" />
+                  </label>
+                  <input type="file" id="uploadPhoto" accept="image/*" style="display: none;" />
                 </div>
                 <div>
                     <p>Add Profile pictures</p>
@@ -280,30 +286,38 @@
             </div>
       </div>
       <div  class="inputArea2">
-        <div class="inputAreaDiv">
-          <input type="text" placeholder="Club name">
-          <div class="checkbox1">
-             <input type="checkbox" id="checkbox1">
-             <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <button>+ Add Club</button>
+        <div class="inputAreaDiv"  id="clubSection">
+        <div class="inputMain">
+        <input type="text" placeholder="Club name" />
         </div>
-        <div class="inputAreaDiv">
+          <div class="checkbox1">
+            <input type="checkbox" id="checkbox1" />
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        
+          <button class="AddClub">+ Add Club</button>
+        </div>
+        <div class="inputAreaDiv" id="gameSection">
+          <div class="inputMain">
           <input type="text" placeholder="Game name">
+          </div>
           <div class="checkbox1">
              <input type="checkbox" id="checkbox1">
              <p>Lorem ipsum dolor sit amet.</p>
           </div>
-          <button>+ Add Game</button>
+          <button class="AddGame">+ Add Game</button>
 
         </div>
-        <div class="inputAreaDiv">
-          <input type="text" placeholder="Traning ">
+        <div class="inputAreaDiv" id="trainingSection">
+          <div class="inputMain">
+            <input type="text" placeholder="Traning ">
+          </div>
+          
           <div  class="checkbox1">
              <input type="checkbox" id="checkbox1">
              <p>Lorem ipsum dolor sit amet.</p>
           </div>
-          <button>+ Add Traning</button>
+          <button  class="AddTraining">+ Add Training</button>
         </div> 
       </div>
     </div>
@@ -316,7 +330,7 @@
     </div>
   </div>
 
-  <script src="/script/player/Player.js"></script>
+  <script src="/script/parent/Parent.js"></script>
   <script src="/script/player/PlayerPositions.js"></script>
   <script src="/script/player/PlayerSelectGender.js"></script>
 </body>

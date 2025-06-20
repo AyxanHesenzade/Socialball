@@ -40,8 +40,11 @@
                 </div>
             </div>
             <div class="userContainer">
-                <div class="userProfilePhoto">
-                    <img src="/assets/player/camera.png" alt="">
+                 <div class="userProfilePhoto">
+                  <label for="uploadPhoto">
+                    <img id="profilePreview" src="/assets/player/camera.png" alt="Avatar" />
+                  </label>
+                  <input type="file" id="uploadPhoto" accept="image/*" style="display: none;" />
                 </div>
                 <div>
                     <p>Add Profile pictures</p>
@@ -183,31 +186,48 @@
             </div>
       </div>
       <div  class="inputArea2">
-        <div class="inputAreaDiv">
-          <input type="text" placeholder="Club name">
-          <div class="checkbox1">
-             <input type="checkbox" id="checkbox1">
-             <p>Lorem ipsum dolor sit amet.</p>
+         <div class="inputAreaDiv"  id="documentSection">
+           <div class="inputMain">
+          <input type="file" placeholder="Select Document" />
+            </div>
+            <div class="checkbox1">
+              <input type="checkbox" id="checkbox1" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <button class="AddDocument">+ Add More</button>
           </div>
-          <button>+ Add Club</button>
-        </div>
-        <div class="inputAreaDiv">
-          <input type="text" placeholder="Game name">
-          <div class="checkbox1">
-             <input type="checkbox" id="checkbox1">
-             <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <button>+ Add Game</button>
 
-        </div>
-        <div class="inputAreaDiv">
-          <input type="text" placeholder="Traning ">
-          <div  class="checkbox1">
-             <input type="checkbox" id="checkbox1">
-             <p>Lorem ipsum dolor sit amet.</p>
+
+         <div class="inputAreaDiv"  id="SertificateSection">
+           <div class="inputMain">
+          <input type="file" placeholder="Download the certificates" />
+            </div>
+            <div class="checkbox1">
+              <input type="checkbox" id="checkbox1" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <button class="AddSertificate">+ Add More</button>
           </div>
-          <button>+ Add Traning</button>
-        </div> 
+
+          <div class="inputAreaDiv"  >
+           <span class="playerİnputTitle">
+               Famous football players you have trained
+           </span>
+          </div>
+
+
+         <div class="inputAreaDiv"  id="playerSection">
+           <div class="inputMain">
+          <input type="text" placeholder="Full name" />
+            </div>
+            <div class="checkbox1">
+              <input type="checkbox" id="checkbox1" />
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <button class="AddPlayer">+ Add More</button>
+          </div>
+
+
       </div>
     </div>
     </div>
